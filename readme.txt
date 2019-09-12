@@ -1,4 +1,4 @@
-The purpose of this repo is to check if curl downloads a file from the eft.healthstream.com SFTP server
+The purpose of this repo is to check if curl installed by the docker downloads a file from the eft.healthstream.com SFTP server
 
 This project cobtains
 1. Docker file
