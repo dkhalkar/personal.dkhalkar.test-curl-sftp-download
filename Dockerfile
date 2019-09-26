@@ -13,9 +13,16 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install \
   parallel \
   perl \
   python-pip \
-  python3.5 
+  python3.5\
+  openssh-server \
+  openssh-client \
+  sshpass
+
+RUN mkdir -p -m 0600 ~/.ssh && ssh-keyscan eft.healthstream.com >> ~/.ssh/known_hosts
   
 # Copy scripts to image.
 COPY . /opt/tool
+
+
 
 ENTRYPOINT ["bash", "--init-file", "/opt/tool/configs/bash.sh", "/opt/tool/run.sh"]

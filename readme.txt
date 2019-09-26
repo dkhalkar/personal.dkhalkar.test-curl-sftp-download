@@ -27,5 +27,5 @@ To execute the project follow the following steps:
 
    docker cp <CONTAINER ID>:/ebsco_ce_center_custom_activity_extract_20190215.csv ebsco_ce_center_custom_activity_extract_20190215.csv
 
-   e.g: docker cp f1557c1377dd:/ebsco_ce_center_custom_activity_extract_20190215.csv ebsco_ce_center_custom_activity_extract_20190215.csv
+   e.g: docker cp 70a2c1fd4841:/ebsco_ce_center_custom_activity_extract_20190215.csv ebsco_ce_center_custom_activity_extract_20190215.csv
 
